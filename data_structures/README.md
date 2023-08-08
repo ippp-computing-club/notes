@@ -68,6 +68,13 @@ Simplest collision avoidance: Use arrays as **buckets** to store multiple object
 
 **General advice**: If you care about ordering, **do not use** hash sets - this tool is useful for checking quickly if something exists.
 
+**Example**: a hash set of size $m=5$ in a memory slot of size $n=9$.
+| ![hash set](hashset.jpg) |
+|--|
+| ![buckets](buckets.jpg) |
+
+In this example there is a collision with elements $c$ and $e$ as illustrated in the bucket.
+
 ---
 ### Hash Map
 A **hash map** is similar to a hash set, except between two elements per entry: a **key** and **value**.
